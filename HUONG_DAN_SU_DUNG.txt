@@ -1,0 +1,37 @@
+========================================================================
+   HƯỚNG DẪN SỬ DỤNG NHANH - MATHNOTE STUDIO (WINDOWS / LINUX / MACOS)
+========================================================================
+
+Ứng dụng tự động chuyển đổi file PDF bài tập Toán thành 2 file PDF:
+  1. File Đáp Án Chi Tiết (đầy đủ các bước biến đổi và kết quả).
+  2. File Note Tập Viết cho Bảng Vẽ (kèm giải thích khái niệm, định hướng
+     cách làm không lộ đáp số, và các dòng kẻ để viết trực tiếp).
+
+------------------------------------------------------------------------
+I. CÁCH MỞ ỨNG DỤNG TRÊN WINDOWS
+------------------------------------------------------------------------
+1. Nếu dùng bản .EXE độc lập (MathNoteStudio.exe):
+   - Nhấp đúp trực tiếp vào "MathNoteStudio.exe" là chạy ngay!
+
+2. Nếu dùng thư mục mã nguồn (cần máy có cài Python từ python.org):
+   - Nhấp đúp vào file "run_windows.bat".
+   - Lần đầu tiên chạy, phần mềm sẽ tự động tải các thư viện cần thiết
+     và mở giao diện ứng dụng.
+   - (Tùy chọn) Nếu muốn tự đóng gói ra 1 file .exe duy nhất trên Windows,
+     nhấp đúp vào file "build_windows_exe.bat".
+
+------------------------------------------------------------------------
+II. CÁCH MỞ ỨNG DỤNG TRÊN LINUX
+------------------------------------------------------------------------
+- Mở Terminal tại thư mục này và chạy: ./run_linux.sh
+
+------------------------------------------------------------------------
+III. KẾT NỐI TÀI KHOẢN GOOGLE AI MIỄN PHÍ (CHỈ CẦN LÀM 1 LẦN - 15 GIÂY)
+------------------------------------------------------------------------
+1. Khi mở ứng dụng, bấm nút "🔑 Lấy Mã 1-Click" (hoặc bấm Bắt đầu xử lý).
+2. Bấm nút "🌐 Mở Trang Lấy Mã Google AI Miễn Phí" trong hộp thoại.
+3. Trên trình duyệt vừa mở (đăng nhập bằng Gmail của bạn), bấm nút
+   "Create API key" -> bấm "Copy".
+4. Ngay khi bạn bấm Copy, ứng dụng sẽ TỰ ĐỘNG bắt mã từ Clipboard,
+   kiểm tra kết nối và lưu lại vĩnh viễn cho mọi lần sử dụng sau!
+========================================================================
