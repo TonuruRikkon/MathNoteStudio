@@ -525,7 +525,8 @@ class AISolver:
         )
 
         iso_env, iso_workdir = AISolver._prepare_isolated_agy_env()
-        models_to_try = ["gemini-3.8-flash-low", None]
+        # Strictly pin to Gemini Flash (Medium) and never fall back to default (Argon)
+        models_to_try = ["gemini-3.8-flash-medium"]
         last_err = None
 
         for m in models_to_try:
@@ -533,13 +534,11 @@ class AISolver:
                 agy_bin,
                 "--disable-slash-commands",
                 "--dangerously-skip-permissions",
-            ]
-            if m:
-                cmd.extend(["--model", m])
-            cmd.extend([
+                "--model", m,
+                "--effort", "medium",
                 "-p", prompt,
                 "--print-timeout", "240s"
-            ])
+            ]
 
             try:
                 res = subprocess.run(
